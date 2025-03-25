@@ -87,24 +87,18 @@
 .header__footer {
   margin-top: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
+  flex-direction: column;
+  gap: 5px;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
+  max-width: 430px;
 }
 
-.header__hours {
+.header__paragraph {
   margin: 0;
-}
-
-.header__address {
-  margin: 0;
-  text-align: left;
-  max-width: 50%;
 }
 
 .recipes {
