@@ -99,7 +99,72 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form form" name="reservation-form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Nombre *</label>
+              <input
+                class="form__input"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nombre"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="guests"
+                >Número de comensales *</label
+              >
+              <input
+                class="form__input"
+                id="guests"
+                name="guests"
+                type="number"
+                placeholder="1-8"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="datetime">Fecha y hora *</label>
+              <input
+                class="form__input"
+                id="datetime"
+                name="datetime"
+                type="datetime-local"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="email"
+                >Tu correo electrónico *</label
+              >
+              <input
+                class="form__input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
+
+            <label class="form__checkbox">
+              <input type="checkbox" class="form__checkbox-input" required />
+              <span class="form__checkbox-text"
+                >Acepto los términos de uso</span
+              >
+            </label>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
